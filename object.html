@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <footer id="myFooter"></footer>
+  <script>
+    const footerContent = {
+        id: 1,
+        phone: "12 34 56 78",
+        pizzeria: "Sofia's Pizza",
+        logo: "images/sofiaspizzalogo.png",
+        address: "Ringvej Syd 104, Viby J",
+        email: "sofiaspizza@gmail.com",
+        facebook: "Sofia's Pizza - Viby J ",
+        facebooklink: "https://www.facebook.com/",
+        copyright: "Copyright 2023, Online bestilling system",
+        openingtimes: "Open: Monday to Saturday, 15-21",
+    }
+    console.log(footerContent.pizzeria);
+    myFooter.innerHTML = "<div id='address'>";
+    myFooter.innerHTML += "<h1>" + footerContent.pizzeria + "</h1>";
+    myFooter.innerHTML += "<p>" + footerContent.phone + "</p>";
+    myFooter.innerHTML += "<img src='" + footerContent.logo +"' alt='text here'>"; //how to add an image
+    myFooter.innerHTML += "</div>";
+  </script>
+</body>
+</html>
